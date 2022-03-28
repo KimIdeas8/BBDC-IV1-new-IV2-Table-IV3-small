@@ -17,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
     <script language="javascript" src="admin/inc-script/common.js"></script>
+    <script src="logging.js"></script>
     <title>BBDC</title>
 </head>
 
@@ -31,10 +32,11 @@
                     <tr valign="top">
 
                         <td style="background-color: white;">
-                            <a href="Home.html" target="mainFrame"><img src="image/logo-booking.gif"></a>
+                            <a href="Home.html" target="mainFrame"><img id="logo-booking"
+                                    src="image/logo-booking.gif"></a>
                         </td>
                         <td style="background-color: white;">
-                            <a href="Home.html" target="mainFrame"><img src="image/logo-title.gif"></a>
+                            <a href="Home.html" target="mainFrame"><img id="logo-title" src="image/logo-title.gif"></a>
                         </td>
 
 
@@ -126,7 +128,8 @@
                         <ul class="subListOverall">
                             <li class="clicklableItem" onclick="gotoGeneral()">
 
-                                <a href="general.html" class="sidelinkbold" target="mainFrame"><span class="redText">Logout</span></a>
+                                <a href="general.html" class="sidelinkbold" target="mainFrame"><span
+                                        class="redText">Logout</span></a>
                             </li>
 
                             <li class="clicklableItem" onclick="gotoGeneral()">
@@ -177,14 +180,15 @@
                         <ul class="subListOverall">
                             <li class="clicklableItem" onclick="gotoGeneral()">
 
-                                <a href="booking/bookingmainpage.html" class="sidelinkbold" target="mainFrame">Theory Training
+                                <a href="booking/bookingmainpage.html" class="sidelinkbold" target="mainFrame">Theory
+                                    Training
 
                                 </a>
                             </li>
 
                             <li class="clicklableItem" onclick="gotoGeneral()">
 
-                                <a href="general.html" class="sidelinkbold" target="mainFrame">Theory Test 
+                                <a href="general.html" class="sidelinkbold" target="mainFrame">Theory Test
 
                                 </a>
                             </li>
@@ -207,7 +211,8 @@
                             </li>
                             <li class="clicklableItem" onclick="gotoGeneral()">
 
-                                <a href="general.html" class="sidelinkbold" target="mainFrame">Traffic Police Simulator Booking</a>
+                                <a href="general.html" class="sidelinkbold" target="mainFrame">Traffic Police Simulator
+                                    Booking</a>
                             </li>
                         </ul>
                     </li>
@@ -221,7 +226,8 @@
                         <ul class="subListOverall">
                             <li class="clicklableItem" onclick="gotoGeneral()">
 
-                                <a href="general.html" class="sidelinkbold" target="mainFrame">Practical Training Handbook
+                                <a href="general.html" class="sidelinkbold" target="mainFrame">Practical Training
+                                    Handbook
                                 </a>
                             </li>
                         </ul>
@@ -232,7 +238,7 @@
                         <ul class="subListOverall">
                             <li class="clicklableItem" onclick="gotoGeneral()">
 
-                                <a href="general.html" class="sidelinkbold" target="mainFrame">Booking Statement 
+                                <a href="general.html" class="sidelinkbold" target="mainFrame">Booking Statement
                                 </a>
                             </li>
 
@@ -247,12 +253,12 @@
                                 <a href="general.html" class="sidelinkbold" target="mainFrame">Cancellations</a>
                             </li>
                         </ul>
-                    <script>
-                        function gotoGeneral() {
-                            return self.frames['mainFrame'].location.href = 'General.html'
-                        }
-                    </script>
-            
+                        <script>
+                            function gotoGeneral() {
+                                return self.frames['mainFrame'].location.href = 'General.html'
+                            }
+                        </script>
+
                 </ul>
                 <!--<SCRIPT LANGUAGE=JAVASCRIPT SRC="../admin/inc-script/DisableRightMouseClick.js"></SCRIPT>-->
 
